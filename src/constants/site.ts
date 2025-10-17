@@ -7,7 +7,7 @@ export const SITE = {
     name: "David Trejo",
     title: "Estudiante en su ultimo año de Ingeniería en Mecatrónica",
     description: "Personal portfolio and blog",
-    url: "https://bytekai.dev",
+    url: "https://dtrejo0611.github.io",
     defaultImage: "/default-og-image.jpg",
 } as const;
 
