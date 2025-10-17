@@ -4,8 +4,8 @@ export type NavigationItem = {
 };
 
 export const SITE = {
-    name: "ByteKai",
-    title: "Software Engineer & Curious Tinkerer",
+    name: "David Trejo",
+    title: "Estudiante en su ultimo año de Ingeniería en Mecatrónica",
     description: "Personal portfolio and blog",
     url: "https://bytekai.dev",
     defaultImage: "/default-og-image.jpg",
