@@ -1,6 +1,6 @@
 # Free Minimal Astro Portfolio
 
-A modern, minimalist portfolio website built with Astro and deployed on Cloudflare Pages. Features a collection of writings, projects, and professional experiences.ff
+A modern, minimalist portfolio website built with Astro and deployed on Cloudflare Pages. Features a collection of writings, projects, and professional experiences.
 
 ![alt text](image.png)
 
