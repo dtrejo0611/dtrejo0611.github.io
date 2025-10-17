@@ -28,7 +28,7 @@ jobs:
           version: '8'     # <- especifica aquí la versión de pnpm
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build site
         run: pnpm run build
