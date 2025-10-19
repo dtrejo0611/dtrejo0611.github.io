@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tu Nombre — Portafolio</title>
+  <meta name="description" content="Portafolio de proyectos de Tu Nombre. Desarrollador web — HTML, CSS, JavaScript." />
+  <!-- Fuente desde Google Fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Tu Nombre</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div>
+        <h2>Hola, soy Tu Nombre</h2>
+        <p>Desarrollador web front-end. Me gusta crear interfaces limpias y accesibles.</p>
+        <p><a class="btn" href="#projects">Ver proyectos</a></p>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <!-- Aquí puedes poner una foto o un SVG -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="container card" id="about">
+      <h3>Sobre mí</h3>
+      <p>Breve párrafo sobre tu experiencia, tecnologías favoritas (HTML, CSS, JS...), y qué tipo de proyectos te interesa hacer.</p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="container" id="projects">
+      <h3>Proyectos</h3>
+      <div class="grid">
+        <!-- Repite cada .project para más proyectos -->
+        <article class="project card">
+          <h4>Proyecto 1</h4>
+          <p>Descripción breve del proyecto. Tecnologías usadas: HTML, CSS, JS.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a> ·
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </p>
+        </article>
+
+        <article class="project card">
+          <h4>Proyecto 2</h4>
+          <p>Descripción breve del proyecto.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a> ·
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </p>
+        </article>
+
+        <!-- Añade más proyectos según necesites -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container card" id="contact">
+      <h3>Contacto</h3>
+      <p>¿Quieres trabajar conmigo o preguntar algo? Escríbeme:</p>
+      <!-- Forma simple con mailto; para formularios reales revisa Formspree o Netlify Forms -->
+      <p><a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+      <!-- Si prefieres formulario, reemplaza por uno que envie a Formspree -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tu Nombre. — <a href="#">GitHub</a> · <a href="#">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Pequeño script: actualizar año y comportamiento simple
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
