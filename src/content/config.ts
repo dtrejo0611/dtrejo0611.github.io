@@ -50,10 +50,6 @@ const site = defineCollection({
         title: z.string(),
         introduction: z.string(),
         sections: z.object({
-            blog: z.object({
-                title: z.string(),
-                viewAllText: z.string(),
-            }),
             projects: z.object({
                 title: z.string(),
                 viewAllText: z.string(),
