@@ -6,7 +6,7 @@ export const NAVIGATION: Navigation = [
         path: "/",
     },
     {
-        name: "Blog",
+        name: "Sobre mi",
         path: "/blog",
     },
     {
