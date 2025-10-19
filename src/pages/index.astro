@@ -21,12 +21,12 @@ const formatDate = (date: Date | undefined) => {
   });
 };
 
-const posts = await getCollection("blog", ({ data }: CollectionEntry<"blog">) => {
+const posts = await getCollection("about", ({ data }: CollectionEntry<"about">) => {
   return import.meta.env.PROD ? !data.draft : true;
 });
 const latestPosts = posts
   .sort(
-    (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+    (a: CollectionEntry<"about">, b: CollectionEntry<"about">) =>
       b.data.publishedAt.getTime() - a.data.publishedAt.getTime()
   )
   .slice(0, 3);
@@ -63,14 +63,14 @@ const featuredProjects = projects.filter((project: CollectionEntry<"projects">) 
     <Section>
       <div class="section-header">
         <h2>{site.sections.blog.title}</h2>
-        <a href="/blog">{site.sections.blog.viewAllText}</a>
+        <a href="/about">{site.sections.blog.viewAllText}</a>
       </div>
       <ContentList>
         {
           latestPosts.map((post) => (
             <article>
               <div class="title-row">
-                <a href={`/blog/${post.id}`}>{post.data.title}</a>
+                <a href={`/about/${post.id}`}>{post.data.title}</a>
                 {post.data.publishedAt && (
                   <time datetime={post.data.publishedAt.toISOString()}>{formatDate(post.data.publishedAt)}</time>
                 )}
