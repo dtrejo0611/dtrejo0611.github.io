@@ -97,6 +97,7 @@ const bookmarks = defineCollection({
 });
 
 export const collections = {
+    blog,
     experience,
     projects,
     site,
