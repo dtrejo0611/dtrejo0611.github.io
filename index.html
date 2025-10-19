@@ -88,29 +88,10 @@
     </div>
   </footer>
 
-  <script>
-    // Actualizar año
+    <script>
+    // Pequeño script: actualizar año
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Dark/Light theme toggle
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
-    let darkMode = false;
-
-    // Cambia el tema y el emoji del botón
-    themeToggle.addEventListener('click', () => {
-      darkMode = !darkMode;
-      body.classList.toggle('dark', darkMode);
-      themeToggle.textContent = darkMode ? '☀️' : '🌙';
-      localStorage.setItem('darkMode', darkMode ? 'true' : 'false');
-    });
-
-    // Mantener preferencia del usuario
-    window.addEventListener('DOMContentLoaded', () => {
-      darkMode = localStorage.getItem('darkMode') === 'true';
-      body.classList.toggle('dark', darkMode);
-      themeToggle.textContent = darkMode ? '☀️' : '🌙';
-    });
   </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
