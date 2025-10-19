@@ -20,6 +20,8 @@
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
+      <!-- Botón para el tema -->
+      <button id="theme-toggle" class="btn" aria-label="Cambiar tema">🌙</button>
     </div>
   </header>
 
@@ -69,8 +71,6 @@
             <a href="#" target="_blank" rel="noopener">Código</a>
           </p>
         </article>
-
-        <!-- Añade más proyectos según necesites -->
       </div>
     </section>
 
@@ -78,9 +78,7 @@
     <section class="container card" id="contact">
       <h3>Contacto</h3>
       <p>¿Quieres trabajar conmigo o preguntar algo? Escríbeme:</p>
-      <!-- Forma simple con mailto; para formularios reales revisa Formspree o Netlify Forms -->
       <p><a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
-      <!-- Si prefieres formulario, reemplaza por uno que envie a Formspree -->
     </section>
   </main>
 
@@ -91,8 +89,28 @@
   </footer>
 
   <script>
-    // Pequeño script: actualizar año y comportamiento simple
+    // Actualizar año
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Dark/Light theme toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    let darkMode = false;
+
+    // Cambia el tema y el emoji del botón
+    themeToggle.addEventListener('click', () => {
+      darkMode = !darkMode;
+      body.classList.toggle('dark', darkMode);
+      themeToggle.textContent = darkMode ? '☀️' : '🌙';
+      localStorage.setItem('darkMode', darkMode ? 'true' : 'false');
+    });
+
+    // Mantener preferencia del usuario
+    window.addEventListener('DOMContentLoaded', () => {
+      darkMode = localStorage.getItem('darkMode') === 'true';
+      body.classList.toggle('dark', darkMode);
+      themeToggle.textContent = darkMode ? '☀️' : '🌙';
+    });
   </script>
 </body>
 </html>
