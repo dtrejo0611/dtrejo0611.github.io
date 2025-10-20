@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>David Trejo — Portafolio</title>
+  <meta name="description" content="Portafolio de proyectos de David Trejo. Desarrollador web — HTML, CSS, JavaScript." />
+  <!-- Fuente desde Google Fonts (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">David Trejo</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="about.html">Sobre mí</a></li>
+          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Botón para el tema -->
+      <button id="theme-toggle" class="btn" aria-label="Cambiar tema">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div>
+        <h2>Bienvenido</h2>
+        <p>Visita la seccion de portafolio para ver mis proyectos</p>
+        <p><a class="btn" href="#projects">Portafolio</a></p>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <!-- Aquí puedes poner una foto o un SVG -->
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="container card" id="about">
+      <h3>Sobre mí</h3>
+      <p>Breve párrafo sobre tu experiencia, tecnologías favoritas (HTML, CSS, JS...), y qué tipo de proyectos te interesa hacer.</p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section class="container" id="projects">
+      <h3>Proyectos</h3>
+      <div class="grid">
+        <!-- Repite cada .project para más proyectos -->
+        <article class="project card">
+          <h4>Proyecto 1</h4>
+          <p>Descripción breve del proyecto. Tecnologías usadas: HTML, CSS, JS.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a> ·
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </p>
+        </article>
+
+        <article class="project card">
+          <h4>Proyecto 2</h4>
+          <p>Descripción breve del proyecto.</p>
+          <p class="project-links">
+            <a href="#" target="_blank" rel="noopener">Demo</a> ·
+            <a href="#" target="_blank" rel="noopener">Código</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="container card" id="contact">
+      <h3>Contacto</h3>
+      <p>¿Quieres trabajar conmigo o preguntar algo? Escríbeme:</p>
+      <p><a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tu Nombre. — <a href="#">GitHub</a> · <a href="#">LinkedIn</a></p>
+    </div>
+  </footer>
+
+    <script>
+    // Pequeño script: actualizar año
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="../scripts.js"></script>
+</body>
+</html>
