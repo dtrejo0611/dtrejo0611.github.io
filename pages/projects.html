@@ -16,7 +16,7 @@
       <nav>
         <ul class="nav">
           <li><a href="about.html">Sobre mí</a></li>
-          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="projects.html">Portafolio</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
@@ -30,21 +30,10 @@
     <section class="hero container" id="home">
       <div>
         <h2>Portafolio</h2>
+        <p>En esta sección encontrarás algunos proyectos que he realizado</p>
       </div>
       <div class="hero-image" aria-hidden="true">
-        <!-- Aquí puedes poner una foto o un SVG -->
       </div>
-    </section>
-
-    <!-- About -->
-    <section class="container card" id="about">
-      <h3>Sobre mí</h3>
-      <p>Breve párrafo sobre tu experiencia, tecnologías favoritas (HTML, CSS, JS...), y qué tipo de proyectos te interesa hacer.</p>
-      <ul class="skills">
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
-        <li>Responsive design</li>
-      </ul>
     </section>
 
     <!-- Projects -->
@@ -55,19 +44,25 @@
         <article class="project card">
           <h4>Proyecto 1</h4>
           <p>Descripción breve del proyecto. Tecnologías usadas: HTML, CSS, JS.</p>
-          <p class="project-links">
-            <a href="#" target="_blank" rel="noopener">Demo</a> ·
-            <a href="#" target="_blank" rel="noopener">Código</a>
-          </p>
+          <button class="open-modal-btn" data-project="1">Leer más</button>
         </article>
 
         <article class="project card">
           <h4>Proyecto 2</h4>
           <p>Descripción breve del proyecto.</p>
-          <p class="project-links">
-            <a href="#" target="_blank" rel="noopener">Demo</a> ·
-            <a href="#" target="_blank" rel="noopener">Código</a>
-          </p>
+          <button class="open-modal-btn" data-project="2">Leer más</button>
+        </article>
+
+        <article class="project card">
+          <h4>Proyecto 3</h4>
+          <p>Descripción breve del proyecto. Tecnologías usadas: HTML, CSS, JS.</p>
+          <button class="open-modal-btn" data-project="3">Leer más</button>
+        </article>
+
+        <article class="project card">
+          <h4>Proyecto 4</h4>
+          <p>Descripción breve del proyecto.</p>
+          <button class="open-modal-btn" data-project="4">Leer más</button>
         </article>
       </div>
     </section>
@@ -93,6 +88,15 @@
       </a></p>
     </div>
   </footer>
+
+  <div id="project-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close-modal" tabindex="0">&times;</span>
+    <div id="modal-project-content">
+      <!-- Aquí se cargará la descripción ampliada -->
+    </div>
+  </div>
+</div>
 
     <script>
     // Pequeño script: actualizar año
