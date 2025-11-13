@@ -136,28 +136,6 @@ a:focus, button:focus {outline:3px solid rgba(37,99,235,0.25); outline-offset:2p
   z-index: 2;
 }
 
-/* Modal básico */
-.modal {
-  position: fixed;
-  z-index: 999;
-  left: 0; top: 0; width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.5);
-  display: flex; align-items: center; justify-content: center;
-}
-.modal-content {
-  background: var(--card);
-  color: var(--text);
-  padding: 2rem;
-  border-radius: var(--radius);
-  box-shadow: 0 8px 32px rgba(16,24,40,0.16);
-  max-width: 1200px;
-  width: 90vw;
-  position: relative;
-}
-.close-modal {
-  position: absolute; top: 1rem; right: 1rem; font-size: 2rem; cursor: pointer;
-}
-
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -186,4 +164,26 @@ a:focus, button:focus {outline:3px solid rgba(37,99,235,0.25); outline-offset:2p
   .skills-grid {
     flex-direction: column;
   }
+}
+
+/* Modal básico */
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex; align-items: center; justify-content: center;
+}
+.modal-content {
+  background: var(--card);
+  color: var(--text);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 32px rgba(16,24,40,0.16);
+  max-width: 1200px;
+  width: 90vw;
+  position: relative;
+}
+.close-modal {
+  position: absolute; top: 1rem; right: 1rem; font-size: 2rem; cursor: pointer;
 }
