@@ -183,7 +183,43 @@ a:focus, button:focus {outline:3px solid rgba(37,99,235,0.25); outline-offset:2p
   max-width: 1200px;
   width: 90vw;
   position: relative;
+  max-height: 80vh;    /* Limita la altura máxima del contenido del modal */
+  overflow-y: auto;
 }
 .close-modal {
   position: absolute; top: 1rem; right: 1rem; font-size: 2rem; cursor: pointer;
+}
+
+.project-images1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* Dos columnas */
+  gap: 8px;
+  margin: 16px 0;
+}
+.project-images1 img {
+  width: 100%;
+  object-fit: contain;  /* <-- Esto muestra toda la imagen, sin recortar */
+  border-radius: 6px;
+  max-height: 260px; 
+}
+.project-images1 img.wide {
+  grid-column: 1 / span 2; /* Que la última (la de clase 'wide') ocupe las dos columnas */
+  max-height: 400px;
+}
+
+.repo-btn {
+  display: inline-block;
+  padding: 0.7em 1.2em;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.07em;
+  margin-top: 1em;
+  transition: background 0.15s;
+}
+.repo-btn:hover, .repo-btn:focus {
+  background: #1d4ed8;
+  color: #fff;
 }
