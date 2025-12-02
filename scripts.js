@@ -55,7 +55,46 @@ const projectDescriptions = {
           Ver en GitHub 🚀
         </a>
       </div>`,
-  2: `<h4>Proyecto 2</h4><p>Descripción ampliada de Proyecto 2. Agrega lo que necesites.</p>`,
+  2: `<h2>Estación Meteorológica Distribuida con Comunicación Serial en FPGA</h2>
+      <h4>Tecnologías: VHDL, FPGA Cyclone IV, Protocolo RS232, Sensores Analógicos.</h4>
+      <h3><b>¿Qué se realizo?</b></h3>
+      <p>Este proyecto aborda la creación de una estación meteorológica capaz de adquirir, 
+         procesar y transmitir datos climáticos entre dos nodos independientes. La arquitectura 
+         se divide en una Estación Base (adquisición y transmisión) y una Estación Remota (recepción, visualización y alertas), 
+         comunicadas mediante una interfaz serial robusta diseñada desde cero en VHDL.</p>
+      <h3><b>¿Cómo se hizo?</b></h3>
+      <p>El core del proyecto reside en el diseño de hardware digital utilizando VHDL sobre FPGAs Cyclone IV. 
+         La lógica de control se basa en Máquinas de Estados Finitos (FSM) sincronizadas para gestionar tres 
+         procesos concurrentes: la interfaz con el convertidor analógico-digital (ADC0804), el barrido y escritura 
+         en pantallas LCD 1602, y la comunicación serial asíncrona.</p>
+      <p>Para la transmisión de datos, se implementó el protocolo RS232 a nivel de registro (RTL), 
+         creando módulos transmisores y receptores que operan a 9600 baudios. El sistema integra conversión 
+         de datos binarios a BCD/ASCII en tiempo real y lógica combinacional para el control de actuadores 
+         (LEDs RGB y Módulo de Audio DFPlayer) en función de los rangos de temperatura recibidos, demostrando una 
+         integración exitosa entre lógica programable y periféricos analógicos/digitales externos.</p>
+      <h3><b>Resultados</b></h3>
+      <p>El sistema logró una transmisión de datos estable y precisa entre las dos estaciones FPGA, visualizando la 
+         temperatura en tiempo real en los displays LCD de ambas placas. Se validó la correcta conversión A/D del sensor 
+         LM35 y la respuesta inmediata de los actuadores (cambio de color en LED RGB y reproducción de audio) al superar 
+         los umbrales de temperatura establecidos. Aunque inicialmente se planteó una comunicación por radiofrecuencia (RF), 
+         se optó por una comunicación cableada RS232 para mitigar problemas de ruido electromagnético, logrando así una 
+         fiabilidad del 100% en la integridad de los datos.</p>
+      <div class = "project-images1">
+        <img src="../img/estacionMeteorologica/esquematicoBase.png" alt="Foto 1" />
+        <img src="../img/estacionMeteorologica/esquematicoRemoto.png" alt="Foto 2" />
+        <img src="../img/estacionMeteorologica/estacionBase.png" alt="Foto 3" />
+        <img src="../img/estacionMeteorologica/estacionRemota.png" alt="Foto 4" />
+        <img src="../img/estacionMeteorologica/circuitoEstacionBase.png" alt="Foto 5" />
+        <img src="../img/estacionMeteorologica/circuitoEstacionRemota.png" alt="Foto 6" />
+      </div>
+      <div style="margin: 1.5em 0 0 0; text-align:center;">
+        <a href="https://github.com/dtrejo0611/classification-system"
+           target="_blank"
+           class="btn repo-btn"
+           rel="noopener noreferrer">
+          Ver en GitHub 🚀
+        </a>
+      </div>`,
   3: `<h4>Proyecto 3</h4><p>Descripción ampliada de Proyecto 3. Aquí puedes poner todos los detalles, imágenes, links, etc.</p>`,
   4: `<h4>Proyecto 4</h4><p>Descripción ampliada de Proyecto 4. Agrega lo que necesites.</p>`
 };
