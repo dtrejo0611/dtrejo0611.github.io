@@ -88,7 +88,7 @@ const projectDescriptions = {
         <img src="../img/estacionMeteorologica/circuitoEstacionRemota.png" alt="Foto 6" />
       </div>
       <div style="margin: 1.5em 0 0 0; text-align:center;">
-        <a href="https://github.com/dtrejo0611/classification-system"
+        <a href="https://github.com/dtrejo0611/weather-station"
            target="_blank"
            class="btn repo-btn"
            rel="noopener noreferrer">
