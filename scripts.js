@@ -88,14 +88,56 @@ const projectDescriptions = {
         <img src="../img/estacionMeteorologica/circuitoEstacionRemota.png" alt="Foto 6" />
       </div>
       <div style="margin: 1.5em 0 0 0; text-align:center;">
-        <a href="https://github.com/dtrejo0611/classification-system"
+        <a href="https://github.com/dtrejo0611/weather-station"
            target="_blank"
            class="btn repo-btn"
            rel="noopener noreferrer">
           Ver en GitHub 🚀
         </a>
       </div>`,
-  3: `<h4>Proyecto 3</h4><p>Descripción ampliada de Proyecto 3. Aquí puedes poner todos los detalles, imágenes, links, etc.</p>`,
+  3: `<h2>Sistema de Inspección Visual y Control de Calidad Automatizado por Visión Artificial</h2>
+      <h4>Tecnologías: Python, PyQt5, OpenCV, NumPy, Procesamiento Digital de Imágenes.</h4>
+      <h3><b>¿Qué se realizó?</b></h3>
+      <p>Este proyecto desarrolla una aplicación de inspección visual con interfaz gráfica completa, 
+        diseñada para automatizar procesos de control de calidad mediante técnicas avanzadas de visión 
+        por computadora. El sistema permite detectar defectos, verificar colores y validar la presencia 
+        de componentes en productos mediante análisis de imágenes en tiempo real o modo simulador, 
+        proporcionando resultados PASS/FAIL instantáneos con retroalimentación visual interactiva.</p>
+      <h3><b>¿Cómo se hizo?</b></h3>
+      <p>El núcleo del sistema se basa en una arquitectura modular construida con PyQt5 para la interfaz 
+        gráfica y OpenCV para el procesamiento de imágenes. Se implementó un widget personalizado (MyLabel) 
+        que permite la selección interactiva de Regiones de Interés (ROIs) mediante interacción click-and-drag, 
+        facilitando la configuración no invasiva de zonas de inspección.</p>
+      <p>Para la detección de defectos se diseñaron dos motores de análisis complementarios: un detector de 
+        color basado en espacios HSV que extrae rangos cromáticos de ROIs de referencia y cuenta píxeles 
+        coincidentes mediante máscaras binarias, y un detector de presencia mediante Template Matching con 
+        algoritmo de Non-Maximum Suppression (NMS) de Malisiewicz para eliminar detecciones duplicadas. 
+        El sistema integra captura en vivo desde cámaras USB con soporte CAP_DSHOW (Windows) y modo simulador 
+        para pruebas con imágenes estáticas, permitiendo guardar configuraciones de ROIs, umbrales y conteos 
+        esperados para pruebas repetibles.</p>
+      <h3><b>Resultados</b></h3>
+      <p>El sistema logró una solución completa de inspección visual con capacidad de análisis dual (color y 
+        presencia) en una única interfaz intuitiva. Se validó la detección precisa de colores mediante rangos 
+        HSV ajustables y el conteo confiable de componentes mediante template matching optimizado con NMS. 
+        La retroalimentación visual en tiempo real con overlays verdes para píxeles coincidentes y rectángulos 
+        para templates detectados proporciona un diagnóstico inmediato del estado de inspección. El sistema 
+        genera reportes automáticos con porcentajes de coincidencia y decisión binaria PASS/FAIL, demostrando 
+        una arquitectura escalable y modular lista para integración en líneas de producción industrial con 
+        mínima configuración requerida.</p>
+      <div class = "project-images1">
+        <img src="../img/visionPython/menuPrincipal.png" alt="Foto 1" />
+        <img src="../img/visionPython/menuPresencia.png" alt="Foto 2" />
+        <img src="../img/visionPython/menuColor.png" alt="Foto 3" />
+        <img src="../img/visionPython/menuTest.png" alt="Foto 4" />
+      </div>
+      <div style="margin: 1.5em 0 0 0; text-align:center;">
+        <a href="https://github.com/dtrejo0611/quality-control"
+           target="_blank"
+           class="btn repo-btn"
+           rel="noopener noreferrer">
+          Ver en GitHub 🚀
+        </a>
+      </div>`,
   4: `<h4>Proyecto 4</h4><p>Descripción ampliada de Proyecto 4. Agrega lo que necesites.</p>`
 };
 
