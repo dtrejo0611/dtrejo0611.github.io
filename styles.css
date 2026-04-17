@@ -100,36 +100,10 @@ body.dark .skills li {
 /* Footer */
 .site-footer{padding:1rem 0;color:var(--muted);font-size:.9rem;text-align:center}
 
-/* Responsive */
-@media (max-width:760px){
-  .hero{flex-direction:column;text-align:center}
-  .grid{grid-template-columns:1fr}
-  .header-inner{flex-direction:row;gap:.5rem}
+@media (max-width: 1000px) {
+  .hero{margin-left: 1rem;}
 }
 
-/* Responsive mejorado - Layout con sidebar para títulos en pantallas medianas */
-@media (min-width: 761px) and (max-width: 1200px) {
-  main > section#projects {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 2rem;
-    align-items: start;
-  }
-  
-  main > section#projects > h3 {
-    grid-column: 1;
-    grid-row: 1;
-    padding: 1rem 0;
-    margin: 0;
-    position: sticky;
-    top: 1rem;
-  }
-  
-  main > section#projects > .grid {
-    grid-column: 2;
-    grid-row: 1;
-  }
-}
 
 /* Accesibilidad: foco visible */
 a:focus, button:focus {outline:3px solid rgba(37,99,235,0.25); outline-offset:2px}
